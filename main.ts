@@ -182,7 +182,7 @@ namespace scroller {
      * @param x The x offset of the background in pixels
      * @param y The y offset of the background in pixels
      */
-    //% block="set background scroll offset to x $x y $y"
+    //% block="set background offset to x $x y $y"
     //% blockId=scroller_setBackgroundScrollOffset
     //% x.defl=0
     //% y.defl=0
@@ -198,7 +198,7 @@ namespace scroller {
     /**
      * Returns the current x offset of the scrolled background
      */
-    //% block="background scroll x"
+    //% block="background offset x"
     //% blockId=scroller_getBackgroundXOffset
     //% group="Position"
     //% weight=20
@@ -210,7 +210,7 @@ namespace scroller {
     /**
      * Returns the current y offset of the scrolled background
      */
-    //% block="background scroll y"
+    //% block="background offset y"
     //% blockId=scroller_getBackgroundYOffset
     //% group="Position"
     //% weight=0
