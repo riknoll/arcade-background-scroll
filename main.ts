@@ -44,7 +44,7 @@ namespace scroller {
             this.lastCameraX = game.currentScene().camera.offsetX;
             this.lastCameraY = game.currentScene().camera.offsetY;
 
-            game.onUpdate(() => {
+            game.currentScene().eventContext.registerFrameHandler(scene.PRE_RENDER_UPDATE_PRIORITY + 1, () => {
                 bg = scene.backgroundImage();
                 currentState = state();
 
@@ -69,7 +69,7 @@ namespace scroller {
 
                 this.lastCameraX = game.currentScene().camera.offsetX;
                 this.lastCameraY = game.currentScene().camera.offsetY;
-            });
+            })
 
             this.renderable = scene.createRenderable(-1000, function(target: Image, camera: scene.Camera) {
                 if (currentState.xOffset) {
