@@ -121,6 +121,7 @@ namespace scroller {
     /**
      * Make the current background image scroll along with the camera.
      * 
+     * 
      * @param mode Controls the directions in which the camera may scroll
      */
     //% block="scroll background with camera $mode"
@@ -137,13 +138,14 @@ namespace scroller {
     /**
      * Make the current background image scroll at the given speeds
      * 
+     * 
      * @param vx The speed to scroll horizontally in pixels per second
      * @param vy The speed to scroll vertically in pixels per second
      */
     //% block="scroll background with vx $vx vy $vy"
     //% blockId=scroller_scrollBackgroundWithSpeed
-    //% vx.defl=-90
-    //% vy.defl=-90
+    //% vx.defl=-50
+    //% vy.defl=-50
     //% group="Scrolling"
     //% weight=20
     //% blockGap=8
@@ -158,6 +160,7 @@ namespace scroller {
      * Sets multipliers for the scroll directions that can be used to make scrolling
      * faster or slower in the given direction. 1 means scroll exactly with the camera
      * for both directions.
+     * 
      * 
      * @param xMultiplier A multiplier to apply to the scrolling in the horizontal direction
      * @param yMultiplier A multiplier to apply to the scrolling in the vertical direction
@@ -178,6 +181,7 @@ namespace scroller {
 
     /**
      * Manually set the scroll offset of the background
+     * 
      * 
      * @param x The x offset of the background in pixels
      * @param y The y offset of the background in pixels
