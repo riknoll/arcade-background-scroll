@@ -25,7 +25,7 @@ namespace scroller {
         public cameraYMultiplier: number;
         public lastCameraX: number;
         public lastCameraY: number;
-    
+
         constructor() {
             this.xOffset = 0;
             this.yOffset = 0;
@@ -120,8 +120,8 @@ namespace scroller {
 
     /**
      * Make the current background image scroll along with the camera.
-     * 
-     * 
+     *
+     *
      * @param mode Controls the directions in which the camera may scroll
      */
     //% block="scroll background with camera $mode"
@@ -129,6 +129,7 @@ namespace scroller {
     //% group="Scrolling"
     //% weight=40
     //% blockGap=8
+    //% help=github:arcade-background-scroll/docs/scroll-background-with-camera
     export function scrollBackgroundWithCamera(mode: CameraScrollMode) {
         const currentState = state();
         currentState.cameraScrolling = true;
@@ -137,8 +138,8 @@ namespace scroller {
 
     /**
      * Make the current background image scroll at the given speeds
-     * 
-     * 
+     *
+     *
      * @param vx The speed to scroll horizontally in pixels per second
      * @param vy The speed to scroll vertically in pixels per second
      */
@@ -149,6 +150,7 @@ namespace scroller {
     //% group="Scrolling"
     //% weight=20
     //% blockGap=8
+    //% help=github:arcade-background-scroll/docs/scroll-background-with-speed
     export function scrollBackgroundWithSpeed(vx: number, vy: number) {
         const currentState = state();
         currentState.currentXSpeed = vx;
@@ -160,8 +162,8 @@ namespace scroller {
      * Sets multipliers for the scroll directions that can be used to make scrolling
      * faster or slower in the given direction. 1 means scroll exactly with the camera
      * for both directions.
-     * 
-     * 
+     *
+     *
      * @param xMultiplier A multiplier to apply to the scrolling in the horizontal direction
      * @param yMultiplier A multiplier to apply to the scrolling in the vertical direction
      */
@@ -172,6 +174,7 @@ namespace scroller {
     //% group="Scrolling"
     //% weight=0
     //% blockGap=8
+    //% help=github:arcade-background-scroll/docs/set-camera-scrolling-multipliers
     export function setCameraScrollingMultipliers(xMultiplier = 1, yMultiplier = 1) {
         const currentState = state();
         currentState.cameraScrolling = true;
@@ -181,8 +184,8 @@ namespace scroller {
 
     /**
      * Manually set the scroll offset of the background
-     * 
-     * 
+     *
+     *
      * @param x The x offset of the background in pixels
      * @param y The y offset of the background in pixels
      */
@@ -193,6 +196,7 @@ namespace scroller {
     //% group="Position"
     //% weight=40
     //% blockGap=8
+    //% help=github:arcade-background-scroll/docs/set-background-offset
     export function setBackgroundScrollOffset(x: number, y: number) {
         const currentState = state();
         currentState.xOffset = x;
@@ -207,6 +211,7 @@ namespace scroller {
     //% group="Position"
     //% weight=20
     //% blockGap=8
+    //% help=github:arcade-background-scroll/docs/background-x-offset
     export function getBackgroundXOffset() {
         return state().xOffset;
     }
@@ -219,6 +224,7 @@ namespace scroller {
     //% group="Position"
     //% weight=0
     //% blockGap=8
+    //% help=github:arcade-background-scroll/docs/background-y-offset
     export function getBackgroundYOffset() {
         return state().yOffset;
     }
