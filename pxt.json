@@ -7,7 +7,6 @@
     "files": [
         "main.ts",
         "README.md",
-        "icon.png",
         "assets.json",
         "docs/background-x-offset.md",
         "docs/background-y-offset.md",
