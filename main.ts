@@ -48,6 +48,8 @@ namespace scroller {
                 bg = scene.backgroundImage();
                 currentState = state();
 
+                if (!bg) return;
+
                 if (this.cameraScrolling) {
                     if (this.cameraScrollMode === CameraScrollMode.OnlyHorizontal || this.cameraScrollMode === CameraScrollMode.BothDirections) {
                         currentState.xOffset -= (game.currentScene().camera.offsetX - this.lastCameraX) * this.cameraXMultiplier;
@@ -72,6 +74,8 @@ namespace scroller {
             })
 
             this.renderable = scene.createRenderable(-1000, function(target: Image, camera: scene.Camera) {
+                if (!bg) return;
+                
                 if (currentState.xOffset) {
                     if (currentState.yOffset) {
                         target.drawTransparentImage(bg, (currentState.xOffset | 0) - bg.width, (currentState.yOffset | 0) - bg.height);

@@ -14,7 +14,6 @@
         "docs/scroll-background-with-speed.md",
         "docs/set-background-offset.md",
         "docs/set-camera-scrolling-multipliers.md"
-
     ],
     "testFiles": [
         "test.ts"
