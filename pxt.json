@@ -1,5 +1,5 @@
 {
-    "name": "arcade-background-scroll",
+    "name": "arcade-background-scroll (updated)",
     "description": "",
     "dependencies": {
         "device": "*"
@@ -19,7 +19,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "1.4.41",
+        "target": "1.8.17",
         "targetId": "arcade"
     },
     "supportedTargets": [
