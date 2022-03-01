@@ -13,7 +13,9 @@
         "docs/scroll-background-with-camera.md",
         "docs/scroll-background-with-speed.md",
         "docs/set-background-offset.md",
-        "docs/set-camera-scrolling-multipliers.md"
+        "docs/set-camera-scrolling-multipliers.md",
+        "docs/set-layer-image.md",
+        "icon.png"
 
     ],
     "testFiles": [
